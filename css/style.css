@@ -84,21 +84,17 @@ header .logo_name {
 
 header .nav {
   margin-left: auto;
-  opacity: 1;
+
   animation: nav_load 1s ease 0s 1, fadein 4s ease 0s 1;
+}
+
+header .bx-menu {
+  font-size: 20px;
+  display: none;
 }
 
 header .nav ul {
   display: flex;
-}
-
-header .bx-menu {
-  color: #4ec5af;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 30px;
-  display: none;
 }
 
 header .nav a {
@@ -125,6 +121,10 @@ header .nav li a.active {
 
 header .nav li {
   display: inline-block;
+}
+
+header .tgbtn {
+  list-style-type: none;
 }
 
 header .nav ul li a:not(.active):after {
@@ -385,12 +385,12 @@ header .nav ul li a:hover:not(.active):after {
 }
 
 .right-side .gmail {
-  transform: translateX(150px) rotate(90deg);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-top: 150px;
+  padding-top: 15px;
+  writing-mode: vertical-lr;
 
   position: relative;
-  right: 18px;
+  right: -65px;
 }
 
 .right-side .gmail a {
@@ -404,10 +404,11 @@ header .nav ul li a:hover:not(.active):after {
 
 .right-side .vertical {
   border-left: 2px solid #8892b0;
-  height: 300px;
-  position: absolute;
-  right: 73px;
-  bottom: -350px;
+  writing-mode: vertical-lr;
+  height: 250px;
+  position: relative;
+  right: -70px;
+  bottom: -10px;
 }
 
 @media only screen and (max-width: 950px) {
@@ -418,14 +419,26 @@ header .nav ul li a:hover:not(.active):after {
     display: none;
   }
 
-  header .bx-menu {
-    display: block;
-    cursor: pointer;
+  body.loaded {
+    margin: 10px 20px;
   }
 
   header .nav {
     position: absolute;
-    opacity: 0;
+    right: 0px;
+    top: -500px;
+
+    background-color: black;
+  }
+
+  header .bx-menu {
+    display: block;
+    position: absolute;
+    color: #4ec5af;
+    font-size: 40px;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
   }
 
   /* remember top is 40px*/
