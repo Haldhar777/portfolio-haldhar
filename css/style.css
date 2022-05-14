@@ -319,7 +319,7 @@ header .nav ul li a:hover:not(.active):after {
   margin: 30px 0;
 }
 
-.project-container .project-image img {
+.project-container img {
   max-width: 550px;
   height: 300px;
   border: 2px solid #4ec5af;
@@ -411,7 +411,7 @@ header .nav ul li a:hover:not(.active):after {
   bottom: -10px;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1028px) {
   .left-side {
     display: none;
   }
@@ -427,7 +427,6 @@ header .nav ul li a:hover:not(.active):after {
     position: absolute;
     right: 0px;
     top: -500px;
-
     background-color: black;
   }
 
@@ -455,5 +454,74 @@ header .nav ul li a:hover:not(.active):after {
 
   header .nav {
     animation: none;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+  .content .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+  .content .profile-image {
+    padding-top: 50px;
+  }
+
+  .content .gridforSkill {
+    margin: 0px;
+  }
+
+  .project-container {
+    display: block;
+    position: relative;
+    max-width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    border: 2px solid #ccd6f6;
+  }
+
+  .project-container img {
+    position: absolute;
+    max-width: 100%;
+  }
+
+  .project-desc {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    z-index: 10;
+    margin: 0;
+    height: 50%;
+  }
+
+  .project-desc .title {
+    color: #0a192f;
+    font-weight: bold;
+    opacity: 1;
+  }
+
+  .project-desc .title-desc {
+    background-color: transparent;
+    color: #0a192f;
+    box-shadow: none;
+    opacity: 1;
+    font-weight: 500;
+  }
+
+  .project-desc .techs {
+    color: #0a192f;
+    opacity: 1;
+  }
+
+  .project-desc .git-link a {
+    color: #0a192f;
+  }
+
+  .project-container .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #4ec5af;
+    opacity: 0.7;
   }
 }
