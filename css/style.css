@@ -220,7 +220,7 @@ header .nav ul li a:hover:not(.active):after {
 .content .heading:after {
   content: "";
   display: block;
-  width: 80%;
+  width: 70%;
   height: 1px;
   background: #4ec5af;
   position: absolute;
@@ -375,6 +375,10 @@ header .nav ul li a:hover:not(.active):after {
   align-items: center;
   justify-content: center;
   margin: 30px 0 0 50px;
+}
+
+.contact-flex p {
+  margin: 20px 100px 20px 40px;
 }
 
 .right-side {
@@ -541,5 +545,28 @@ header .nav ul li a:hover:not(.active):after {
     height: 100%;
     background-color: #4ec5af;
     opacity: 0.7;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    max-width: 100%;
+    margin: 0px;
+  }
+
+  body.loaded {
+    margin: 10px;
+  }
+
+  #home h1 {
+    font-size: 40px;
+  }
+
+  .content .heading:after {
+    width: 60%;
+  }
+
+  .contact-flex p {
+    margin-right: 0px;
   }
 }
