@@ -149,7 +149,7 @@ header .nav ul li a:hover:not(.active):after {
 }
 
 .left-side {
-  flex: 20%;
+  flex: 15%;
   font-size: 30px;
   padding-top: 40px;
   align-self: flex-start;
@@ -180,7 +180,7 @@ header .nav ul li a:hover:not(.active):after {
 }
 
 .content {
-  flex: 70%;
+  flex: 75%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -220,7 +220,7 @@ header .nav ul li a:hover:not(.active):after {
 .content .heading:after {
   content: "";
   display: block;
-  width: 70%;
+  width: 80%;
   height: 1px;
   background: #4ec5af;
   position: absolute;
@@ -316,7 +316,7 @@ header .nav ul li a:hover:not(.active):after {
 
 .project-container {
   display: flex;
-  margin: 30px 0;
+  margin: 30px 100px 30px 0px;
 }
 
 .project-container img {
@@ -361,6 +361,7 @@ header .nav ul li a:hover:not(.active):after {
 .project-desc .git-link {
   margin-left: auto;
   margin-top: 10px;
+  font-size: 30px;
 }
 
 .project-desc .git-link a {
@@ -420,7 +421,12 @@ header .nav ul li a:hover:not(.active):after {
   }
 
   body.loaded {
-    margin: 10px 20px;
+    margin: 20px 20px;
+  }
+
+  header {
+    padding-top: 15px;
+    padding-bottom: 10px;
   }
 
   header .nav {
@@ -432,6 +438,8 @@ header .nav ul li a:hover:not(.active):after {
 
   header .bx-menu {
     display: block;
+    padding-top: 15px;
+    padding-bottom: 10px;
     position: absolute;
     color: #4ec5af;
     font-size: 40px;
@@ -457,13 +465,23 @@ header .nav ul li a:hover:not(.active):after {
   }
 
   .content {
-    max-width: 100%;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .content p {
+    margin: 0px;
+    text-align: left;
   }
   .content .aboutGrid {
     grid-template-columns: 1fr;
   }
   .content .profile-image {
     padding-top: 50px;
+  }
+
+  .profile-image .img-area {
+    margin: 0 auto;
   }
 
   .content .gridforSkill {
@@ -475,7 +493,7 @@ header .nav ul li a:hover:not(.active):after {
     position: relative;
     max-width: 600px;
     height: 300px;
-    margin: 20px auto;
+    margin: 30px auto;
     border: 2px solid #ccd6f6;
   }
 
@@ -487,7 +505,7 @@ header .nav ul li a:hover:not(.active):after {
   .project-desc {
     display: block;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     position: absolute;
     z-index: 10;
     margin: 0;
